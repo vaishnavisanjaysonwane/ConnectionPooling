@@ -12,9 +12,9 @@ public class ConnectionManager {
 
     public boolean isConnected= false;
     AtomicInteger count = new AtomicInteger(0);
-    private ConnectionOperationPoolManager poolManager;
+    private ConnectionPoolOperationManager poolManager;
 
-    public ConnectionManager(ConnectionOperationPoolManager poolManager) {
+    public ConnectionManager(ConnectionPoolOperationManager poolManager) {
         this.poolManager = poolManager;
     }
 
