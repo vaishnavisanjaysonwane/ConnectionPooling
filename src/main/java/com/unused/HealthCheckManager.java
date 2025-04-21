@@ -1,4 +1,6 @@
-package com;
+package com.unused;
+
+import com.ConnectionPoolManager;
 
 public class HealthCheckManager {
     public void setPoolManager(ConnectionPoolManager connectionPoolManager) {

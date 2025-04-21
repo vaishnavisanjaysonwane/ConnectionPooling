@@ -1,5 +1,6 @@
 package com;
 
+import com.unused.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -53,10 +54,11 @@ public class ConnectionPoolOperationManager {
         ConnectionPoolManager connectionPoolManager = pools.get(hsmId);
         if (connectionPoolManager == null) {
             log.error("HSM connection cache not found");
+            return null;
         }
         commandManager.setRklMode(rklMode);
         log.info("Rkl mode set to command manager");
-        return commandManager.sendCommand(command, connectionPoolManager.getAllPoolsForHSM(), connectionPoolManager.getRetryCount);
+        return commandManager.sendCommand(command, connectionPoolManager.getAllPoolsForHSM(), connectionPoolManager.getRetryCount());
     }
 
 

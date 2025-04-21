@@ -1,4 +1,4 @@
-package com;
+package com.unused;
 
 public class CacheDataContainer {
     public static CacheDataContainer getInstance() {

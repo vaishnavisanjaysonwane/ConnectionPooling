@@ -2,10 +2,7 @@ package com;
 
 import org.apache.commons.pool2.BasePooledObjectFactory;
 import org.apache.commons.pool2.PooledObject;
-import org.springframework.beans.factory.annotation.Autowired;
 
-import java.net.InetSocketAddress;
-import java.net.Socket;
 
 public class ConnectionFactory extends BasePooledObjectFactory<Connection> {
 

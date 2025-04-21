@@ -20,9 +20,9 @@ public class HSMConnection implements Serializable {
 
     //private HSMConnection secondFailover;
 
-    private int maxConnections;
+    private int maxConnections = 5;
 
-    private int minConnections;
+    private int minConnections = 1;
 
     private String type;
 
